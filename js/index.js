@@ -19,8 +19,13 @@ let yScrollPosition;
 function scrollLoop() {
   xScrollPosition = window.pageXOffset;
   yScrollPosition = window.pageYOffset;
+  if (yScrollPosition < 600) {
         setTranslate(0, yScrollPosition * 0.7, parallax);
         requestAnimationFrame(scrollLoop);
+  } else {
+    requestAnimationFrame(scrollLoop);
+  }
+
 }
 
 const navbar = document.querySelector("nav");
@@ -32,4 +37,41 @@ const navbar = document.querySelector("nav");
       navbar.classList.remove ("navbar-scrolled");
     }
   });
+
+  function scrollToTop (){
+    window.scrollTo(0,0);
+  }
+
+  const btnTop = document.getElementById("btn-top") 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= 200) {
+      btnTop.style.display = "block";
+    } else {
+      btnTop.style.display = "none";
+    }
+  });
+
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    center:true,
+    loop:true,
+    autoplay: true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    nav:true,
+    dots:false,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        480:{
+            items:1,
+        },
+        960:{
+            items:3,
+        },
+        1920:{
+            items:5,
+        }
+    }
+});
 
