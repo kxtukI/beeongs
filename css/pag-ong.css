@@ -30,7 +30,10 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
+<<<<<<< HEAD
   background-color: #F6F8FF;
+=======
+>>>>>>> d7106f6f74bbd1989e4fe8af903b2e87ff144773
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -64,7 +67,11 @@ body {
 }
 
 .nav-logo {
+<<<<<<< HEAD
   height: 7vh;
+=======
+  height: 5vh;
+>>>>>>> d7106f6f74bbd1989e4fe8af903b2e87ff144773
 }
 
 .nav-logo-menu {

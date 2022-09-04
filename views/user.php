@@ -26,9 +26,15 @@ session_start();
   <nav class="navbar">
     <h1 class="nav-logo">ONGS</h1>
     <div class="nav-links">
+<<<<<<< HEAD
       <a class="underline" href="index.php">PÁGINA INICIAL</a>
       <a class="underline" href="forum-index.php">FÓRUM</a>
       <a class="underline" href="ongs-page.php">ONGS</a>
+=======
+      <a class="underline" href="">PÁGINA INICIAL</a>
+      <a class="underline" href="forum-index.php">FÓRUM</a>
+      <a class="underline" href="">ONGS</a>
+>>>>>>> d7106f6f74bbd1989e4fe8af903b2e87ff144773
     </div>
 </nav>
 <section class="container">
