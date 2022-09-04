@@ -1,0 +1,125 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    height: 50px;
+    background-color: #E9D758;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+  }
+  
+  .nav-logo {
+    height: 7vh;
+  }
+  
+  .nav-logo-menu {
+    position: relative;
+    top: 0;
+    height: 25vh;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    #navbar {
+    align-items: left;
+    justify-content: flex-start;
+    }
+    }
+  
+  .nav-logo-menu {
+    display: none;
+  }
+  
+    @media only screen and (max-width: 1024px) {
+      .nav-logo-menu {
+        display: block;
+      }
+      }
+  
+  #navbar.active .nav-links a {
+    display: flex;
+  }
+  
+  #navbar.active .nav-links {
+    display: flex;
+  }
+  #navbar.active .nav-logo {
+    display: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 100px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    letter-spacing: 0.20em;
+    color: #1F1300;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .nav-links a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 0;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.20em;
+    display: none;
+    color: #1F1300;
+    }
+    }
+  
+  @media only screen and (max-width: 1024px) {
+    .nav-links {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 35vh;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      display: none;
+      background-color: #E9D758;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+    }
+    }
+  
+  .mobile-menu {
+    color: #1F1300;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .mobile-menu {
+      display: block;
+      z-index: 99;
+    }
+  }
+  
+  .underline {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 10px;
+    left: 0;
+    background-color: #1F1300;
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+  }
