@@ -21,27 +21,22 @@
     <title>Cadastre-se - ONGS</title>
 </head>
 <body>
+<div onclick="backhome()" class="back-home">
+    <svg width="30" height="30"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M109.3 288L480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288z" fill="#F6F8FF"/>
+    </svg>
+    </div>
     <div class="signup">
-<<<<<<< HEAD
         <!-- <a class="voltar" href="index.html">
-=======
-        <a class="voltar" href="index.html">
->>>>>>> d7106f6f74bbd1989e4fe8af903b2e87ff144773
         <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M90 45C90 33.0653 85.2589 21.6193 76.8198 13.1802C68.3807 4.74106 56.9347 0 45 0C33.0653 0 21.6193 4.74106 13.1802 13.1802C4.74106 21.6193 0 33.0653 0 45C0 56.9347 4.74106 68.3807 13.1802 76.8198C21.6193 85.2589 33.0653 90 45 90C56.9347 90 68.3807 85.2589 76.8198 76.8198C85.2589 68.3807 90 56.9347 90 45V45ZM47.8125 64.6875C47.8125 65.4334 47.5162 66.1488 46.9887 66.6762C46.4613 67.2037 45.7459 67.5 45 67.5C44.2541 67.5 43.5387 67.2037 43.0113 66.6762C42.4838 66.1488 42.1875 65.4334 42.1875 64.6875V32.1019L30.1163 44.1788C29.5881 44.7069 28.8719 45.0036 28.125 45.0036C27.3781 45.0036 26.6619 44.7069 26.1337 44.1788C25.6056 43.6506 25.3089 42.9344 25.3089 42.1875C25.3089 41.4406 25.6056 40.7244 26.1337 40.1962L43.0087 23.3212C43.27 23.0593 43.5804 22.8515 43.9221 22.7097C44.2638 22.568 44.6301 22.495 45 22.495C45.3699 22.495 45.7362 22.568 46.0779 22.7097C46.4196 22.8515 46.73 23.0593 46.9913 23.3212L63.8663 40.1962C64.3944 40.7244 64.6911 41.4406 64.6911 42.1875C64.6911 42.9344 64.3944 43.6506 63.8663 44.1788C63.3381 44.7069 62.6219 45.0036 61.875 45.0036C61.1281 45.0036 60.4119 44.7069 59.8837 44.1788L47.8125 32.1019V64.6875Z" fill="#F6F8FF"/>
         </svg>
         VOLTAR
-<<<<<<< HEAD
         </a> -->
         <div class="form-signup"> 
+            <img src="../img/beeongs/sub logo.svg" class="img-form" alt="">
     <h1 class="title-signup">REGISTRAR</h1>
         <form action="../controllers/register.php" method="post">
-=======
-        </a>
-        <div class="form-signup"> 
-    <h1 class="title-signup">REGISTRAR</h1>
-        <!-- <form action="../controllers/register.php" method="post"> -->
->>>>>>> d7106f6f74bbd1989e4fe8af903b2e87ff144773
             <div class="form-group">
                 <input type="name" class="form-control" name="nome" id="nome" maxlength="50" required="required" autocomplete="off">
                 <label class="form-control-placeholder" for="nome">Nome Completo</label>
@@ -67,18 +62,19 @@
     </div>
 </div>
     <script type="text/javascript">
-<<<<<<< HEAD
 
-        $(document).ready(function(){
-            Swal.fire({
-  icon: 'error',
-  title: 'Erro!',
-  text: 'CPF Inválido',
-  confirmButtonColor: '#E9D758',
-})
-        })
-=======
->>>>>>> d7106f6f74bbd1989e4fe8af903b2e87ff144773
+    function backhome(){
+        location.replace("index.html");
+    }
+
+//         $(document).ready(function(){
+//             Swal.fire({
+//   icon: 'error',
+//   title: 'Erro!',
+//   text: 'CPF Inválido',
+//   confirmButtonColor: '#E9D758',
+// })
+//         })
      
     document.getElementById("cpf").onkeypress = function(e) {
          let chr = String.fromCharCode(e.which);
@@ -134,10 +130,6 @@
     result =  true;
     }
     if(result == false){
-<<<<<<< HEAD
-=======
-        e.preventDefault();
->>>>>>> d7106f6f74bbd1989e4fe8af903b2e87ff144773
             Swal.fire({
   icon: 'error',
   title: 'Erro!',
@@ -177,11 +169,7 @@
             Swal.fire({
   icon: 'error',
   title: 'Erro!',
-<<<<<<< HEAD
   text: 'Digite um e-mail válido',
-=======
-  text: 'Digite um email valido',
->>>>>>> d7106f6f74bbd1989e4fe8af903b2e87ff144773
   confirmButtonColor: '#E9D758',
 })
 		}
@@ -220,10 +208,7 @@
   text: 'CPF Inválido!',
   confirmButtonColor: '#E9D758',
 })
-<<<<<<< HEAD
 
-=======
->>>>>>> d7106f6f74bbd1989e4fe8af903b2e87ff144773
         }
 		else{			
 			$.ajax({

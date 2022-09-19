@@ -9,18 +9,18 @@ $cpf = ($_POST["cpf"]);
 
 // $usuario = $stmt -> rowCount();
 
-$stmt1 = $bd -> prepare("SELECT email FROM usuarios WHERE email = '$email'");
-$stmt1 -> execute();
-$usuario1 = $stmt1 -> rowCount();
+$stmtemail = $bd -> prepare("SELECT email FROM usuarios WHERE email = '$email'");
+$stmtemail -> execute();
+$usuarioemail = $stmtemail -> rowCount();
 
-$stmt2 = $bd -> prepare("SELECT cpf FROM usuarios WHERE cpf = '$cpf'");
-$stmt2 -> execute();
-$usuario2 = $stmt2 -> rowCount();
+$stmtcpf = $bd -> prepare("SELECT cpf FROM usuarios WHERE cpf = '$cpf'");
+$stmtcpf -> execute();
+$usuariocpf = $stmtcpf -> rowCount();
 
-    if($usuario1 > 0) {
-        $_SESSION["error_email"] = ".";
+    if($usuarioemail > 0) {
+        $_SESSION["error_email"] == true;
         header("Location:../views/register-page.php");
-    } elseif ($usuario2 > 0) {
+    } elseif ($usuariocpf > 0) {
         $_SESSION["error_cpf"] = ".";
         header("Location:../views/register-page.php");
     } else {

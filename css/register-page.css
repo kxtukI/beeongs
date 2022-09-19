@@ -126,7 +126,8 @@ body {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to bottom, rgba(0 , 0, 0, .5), rgba(0 , 0, 0, .5)),url("../img/foto-carousel2.jpg");
-  background-position: left;
+  background-position: 0% 75%;
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
@@ -140,6 +141,33 @@ body {
   width: 60%;
   background-color: #F6F8FF;
   box-shadow: rgba(0, 0, 0, 0.32) 0px 10px 36px 0px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .signup {
+    background-image: linear-gradient(to bottom, rgba(0 , 0, 0, .5), rgba(0 , 0, 0, .5)),url("../img/foto-carousel2.jpg");
+    background-position: 55%;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .form-signup {
+  width: 100%;
+  }
+}
+
+.img-form {
+  position: absolute;
+  top: 0;
+  width: 175px;
+}
+
+@media only screen and (max-width: 1024px) { 
+  .img-form {
+    left: auto;
+    width: 200px;
+  }
 }
 
 .title-signup {
@@ -167,6 +195,12 @@ input {
   appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  input {
+    width: 65vw;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -258,17 +292,19 @@ input {
   transform: scale(98%);
 }
 
-.voltar {
+.back-home {
+  cursor: pointer;
   display: flex;
-  align-items: center;
   position: absolute;
-  top: 0;
-  left: 0;
-  color: #F6F8FF;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .back-home {
+    display: none;
+  }
 }
 
 .swal2-popup {

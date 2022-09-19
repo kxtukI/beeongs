@@ -14,8 +14,7 @@ $usuario = $stmt -> rowCount();
         header("Location:../views/user.php");
         exit();
     }   else {
-        unset($_SESSION["email"]);
-        $_SESSION["error"] = ".";
+        $_SESSION["error"] = true;
         header("Location: ../views/login-page.php");
         exit();
     }

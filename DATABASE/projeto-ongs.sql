@@ -1,15 +1,9 @@
 create database projeto_ongs;
 
-select * from usuarios;
-<<<<<<< HEAD
-	    
-=======
-	
-select id, email from usuarios where email = "felipe@gmail.com" and senha = "12345";    
-    
->>>>>>> d7106f6f74bbd1989e4fe8af903b2e87ff144773
+use projeto_ongs;  
+
 create table usuarios (
-	id int auto_increment,
+	idUsuarios int auto_increment,
     nome varchar(255) not null,
     email varchar(255) not null,
     cpf int(11),
@@ -20,8 +14,14 @@ create table usuarios (
     primary key (id, cpf)
 );
 
+create table ongs (
+	idOngs int auto_increment primary key,
+    nome varchar(255) not null,
+    categoria varchar(255) not null
+);
+
 create table posts (
-	id int auto_increment primary key,
+	idPosts int auto_increment primary key,
     img varchar(255),
     userId int,
     descricao varchar(255)
