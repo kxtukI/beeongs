@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include ("connect.php");
+include("connect.php");
 
 $email = trim($_POST["email"]);
 $senha = $_POST["senha"];
@@ -11,7 +11,7 @@ $usuario = $stmt -> rowCount();
 
     if($usuario > 0) {
         $_SESSION["email"] = $email;
-        header("Location:../views/user.php");
+        header("Location:../views/index.php");
         exit();
     }   else {
         $_SESSION["error"] = true;

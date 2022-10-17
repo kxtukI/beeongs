@@ -4,9 +4,11 @@
     justify-content: space-between;
     width: 100%;
     padding: 15px;
-    height: 50px;
+    max-height: 50px;
+    position: fixed;
     background-color: #E9D758;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 36px 0px;
+    z-index: 99;
   }
   
   .nav-logo {
@@ -87,6 +89,12 @@
       box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
     }
     }
+
+    .nav-logo {
+      top: 0;
+      left: 0;
+      height: 7vh;
+    }
   
   .mobile-menu {
     color: #1F1300;
@@ -122,4 +130,57 @@
   .underline:hover:after {
     transform: scaleX(1);
     transform-origin: bottom;
+  }
+
+  .btn-login {
+    padding: 5px 5px 5px 10px;
+    border: 2.5px solid #1F1300;
+  }
+
+  .user-img {
+    margin: -7.5px 2.5px;
+    width: 4vh;
+    border-radius: 50%;
+  }  
+  
+  #dropdown {
+    cursor: pointer;
+  }
+
+  #dropdown-section {
+    display: none;
+    position: fixed; 
+    z-index: 99; 
+    padding-top: 60px;
+    right: 100;
+    top: 0;
+    width: auto; 
+    height: auto; 
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 36px 0px;
+    background-color: #E9D758;
+    animation-name: dropdown;
+    animation-duration: 0.5s
+  }
+
+  @keyframes dropdown {
+    from {opacity: 0}
+    to {opacity: 1}
+    }
+
+  .dropdown-content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+    color: #1F1300;
   }

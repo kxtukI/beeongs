@@ -1,3 +1,7 @@
+<?php 
+require("../../controllers/header-ongs.php");
+include("../../controllers/connect.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
     <link rel="stylesheet" href="../../css/pag-ong.css">
+    <link rel="stylesheet" href="../../css/header.css">
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css" type="text/css">
@@ -13,16 +18,6 @@
     <title>Projeto ICA - BeeONGS</title>
 </head>
 <body>
-    <nav id="navbar">
-        <div id="btn-mobile" class="mobile-menu"><i class="fa-solid fa-bars"></i></div>
-        <h2><img src="../../img/beeongs/sub logo.svg" alt="" class="nav-logo">BEEONGS</h2>
-        <div class="nav-links">
-            <img src="../../img/beeongs/sub logo.svg" alt="" class="nav-logo-menu">
-          <a class="underline" href="../index.html">INÍCIO</a>
-          <a class="underline" href="../forum-index.php">FÓRUM</a>
-          <a class="underline" href="">ONGS</a>
-        </div>
-    </nav>
     <div class="info-ongs">
         <img class="img-ong" src="../../img/ongs/projeto-ica.png" alt="">
         <h1>PROJETO ICA</h1>

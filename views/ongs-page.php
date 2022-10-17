@@ -1,3 +1,7 @@
+<?php
+include_once("../controllers/connect.php");
+require("../controllers/header.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,16 +19,7 @@
     <title>ONGS - BeeONGS</title>
 </head>
 <body>
-    <nav id="navbar">
-        <div id="btn-mobile" class="mobile-menu"><i class="fa-solid fa-bars"></i></div>
-        <img src="../img/beeongs/sub logo.svg" alt="" class="nav-logo">
-        <div class="nav-links">
-            <img src="../../img/beeongs/sub logo.svg" alt="" class="nav-logo-menu">
-          <a class="underline" href="index.html">INÍCIO</a>
-          <a class="underline" href="forum-index.php">FÓRUM</a>
-          <a class="underline" href="">ONGS</a>
-        </div>
-    </nav>
+    <div class="ongs-page-section">
     <div class="search-ongs">
         <div>
         <input type="text" id="form-control" placeholder="Pesquisar" autocomplete="off" maxlength="50"/>
@@ -32,6 +27,27 @@
         </div>
     </div>
     <div class="ongs-content">
+        <div class="items" onclick="window.location='ongs/projeto-ica.php'">
+            <img src="../img/ongs/projeto-ica.png" alt="">
+            <div class="info">
+                <h1>Projeto Ica</h1>
+                <p>Humanas</p>
+            </div>
+        </div>
+    <div class="items">
+            <img src="../img/ongs/projeto-ica.png" alt="">
+            <div class="info">
+                <h1>Projeto Ica</h1>
+                <p>Humanas</p>
+            </div>
+        </div>
+    <div class="items">
+            <img src="../img/ongs/projeto-ica.png" alt="">
+            <div class="info">
+                <h1>Projeto Ica</h1>
+                <p>Humanas</p>
+            </div>
+        </div>
         <div class="items">
             <img src="../img/ongs/projeto-ica.png" alt="">
             <div class="info">
@@ -39,14 +55,7 @@
                 <p>Humanas</p>
             </div>
         </div>
-    <div class="items">
-            <img src="../img/ongs/projeto-ica.png" alt="">
-            <div class="info">
-                <h1>Projeto Ica</h1>
-                <p>Humanas</p>
-            </div>
-        </div>
-    <div class="items">
+        <div class="items">
             <img src="../img/ongs/projeto-ica.png" alt="">
             <div class="info">
                 <h1>Projeto Ica</h1>
@@ -82,8 +91,8 @@
             </div>
         </div>
     </div>
-
     <div class="search-content">
+    </div>
     </div>
     <script type="text/javascript"> 
         var ongsContent = document.querySelectorAll(".ongs-content");

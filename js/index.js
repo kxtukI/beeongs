@@ -58,23 +58,20 @@ owl.owlCarousel({
     autoplay: true,
     autoplayTimeout:5000,
     autoplayHoverPause:true,
+    margin:350,
     nav:true,
     dots:false,
-    margin:50,
     responsiveClass:true,
     responsive:{
-        480:{
-            items:1,
-        },
-        960:{
-            items:3,
-        },
-        1600:{
-          items:5,
-        },
-        1920:{
-            items:7,
-        }
+      0:{
+        items: 1
+      },
+      480:{
+        items: 3
+      },
+      769:{
+        items: 6
+      }
     }
 });
 
@@ -87,3 +84,16 @@ function menuMobile() {
 
 btnMobile.addEventListener("click", menuMobile);
 
+function toggleD(){
+  var dropdown = document.getElementById("dropdown-section");
+  
+    if(dropdown.style.display == 'block')
+        dropdown.style.display = 'none';
+         else
+        dropdown.style.display = 'block';
+        
+  window.onclick = function(t) {
+    if (event.target == dropdown) {
+      dropdown.style.display = "none";
+    }
+  }}

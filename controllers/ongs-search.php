@@ -15,7 +15,7 @@ if(isset($_POST["inputText"])){
             $nome = $row['nome'];
             $categoria = $row['categoria'];
         ?>
-        <div class="items">
+        <div class="items" onclick="window.location='ongs/<?php echo $nome;?>'">
             <img src="../img/ongs/projeto-ica.png" alt="">
             <div class="info">
                 <h1><?php echo $nome;?></h1>
@@ -30,7 +30,7 @@ if(isset($_POST["inputText"])){
 <?php
     } else { ?>
         <div class="error">
-            <p>Nenhum resultado encontrado</p>
+            <p>Nenhum resultado encontrado.</p>
         </div>
 <?php    
     }

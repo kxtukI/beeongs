@@ -2,7 +2,7 @@
 	session_start();
  
 	if(isset($_SESSION["email"]) == true) {
-        header("Location: ../views/user.php");
+        header("Location: ../views/index.php");
         exit();
     }
 ?>
@@ -62,9 +62,8 @@
     </div>
 </div>
     <script type="text/javascript">
-
     function backhome(){
-        location.replace("index.html");
+        location.replace("index.php");
     }
 
 //         $(document).ready(function(){
@@ -208,7 +207,6 @@
   text: 'CPF Inválido!',
   confirmButtonColor: '#E9D758',
 })
-
         }
 		else{			
 			$.ajax({

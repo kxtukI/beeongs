@@ -1,4 +1,6 @@
 <?php 
+//require("../controllers/header.php");
+// include("../controllers/check-login.php");
 session_start();
 
     if(isset($_SESSION["email"]) == false) {
@@ -16,6 +18,7 @@ session_start();
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="../js/jquery.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/header.js"></script>
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <script src="../js/index.js" defer ></script>
@@ -23,14 +26,6 @@ session_start();
     <title>Meu Perfil - ONGS</title>
 </head>
 <body>
-  <nav class="navbar">
-    <h1 class="nav-logo">ONGS</h1>
-    <div class="nav-links">
-      <a class="underline" href="index.php">PÁGINA INICIAL</a>
-      <a class="underline" href="forum-index.php">FÓRUM</a>
-      <a class="underline" href="ongs-page.php">ONGS</a>
-    </div>
-</nav>
 <section class="container">
     <div class="header-info">
     <img src="../img/user.png" alt="">

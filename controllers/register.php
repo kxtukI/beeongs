@@ -26,6 +26,5 @@ $usuariocpf = $stmtcpf -> rowCount();
     } else {
         $stmt = $bd -> prepare("INSERT INTO usuarios (nome, email, cpf, senha, dataCadastro) VALUES ('$nome', '$email', '$cpf', '$senha', NOW())");
         $stmt->execute();
-        $_SESSION["email"] = $_POST["email"];
-        header("Location:../views/user.php");
+        header("Location:../views/login-page.php");
     }
