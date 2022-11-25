@@ -51,10 +51,10 @@ require("../controllers/header.php");
         <img src="../img/foto-carousel2.jpg" class="carousel-img" alt="...">
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-        <div class="info-section">
-          <h1>APOIO</h1>
-          <img src="../img/beecloud-logo.svg" class="beecloud-logo" alt="">
-          <a href="https://www.beecloud.com.br" target="_blank" >SAIBA MAIS</a>
+      <div class="info-section">
+          <h1>Vai ter que pagar imposto?</h1>
+          <p>Transforme parte do valor em doação!</p>
+          <a id="saiba-mais">SAIBA MAIS</a>
       </div>
         <img src="../img/foto-carousel1.png" class="carousel-img" alt="...">
       </div>
@@ -78,10 +78,11 @@ require("../controllers/header.php");
   <section class="beeongs-section container">
     <img src="../img/foto-menina-balao.jpeg" class="beeongs-section-img" alt="">
     <div class="beeongs-section-content">
-      <p>A BEEONGS tem como objetivo ajudar as ONGs de Mogi Mirim por meio do nosso site, onde as instituições podem
-        divulgar seus serviços e falar sobre suas necessidades para que nossos usuários dispostos a ajudar, possam doar
-        de acordo com suas possibilidades.
-        Além, de claro, auxiliar as ONGs a terem melhores condições para ajudarem as pessoas que acolhem. </p>
+      <h1> Transforme parte do imposto de renda em doação! </h1>
+      <p>Transforme parte do valor em doação!
+A legislação permite que até 6% do chamado "imposto devido" seja convertido em doação.
+O valor pode ser direcionado a fundos federais, estaduais ou municipais. Esses fundos são responsáveis por repassar os recursos para as instituições de apoio a crianças, adolescentes ou idosos.
+Porém, para que o dinheiro chegue ao destino final, é necessário que você informe a instituição que pretende ajudar. <a href="https://www.uol.com.br/ecoa/ultimas-noticias/2022/03/23/ir2022-voce-pode-doar-parte-do-imposto-devido-para-quem-precisa-veja-como.htm" target="_blank" style="font-weight: 400; color: #1F1300;">Clique aqui para saber mais.</a></p>
     </div>
   </section>
   <!-- <div class="beeongs-section">
@@ -104,46 +105,133 @@ require("../controllers/header.php");
     <div class="owl-carousel owl-theme">
       <div class="item">
         <div class="card">
-          <img src="../img/foto-depoimento1.jpg" alt="">
+          <img src="../img/depoimentos/telma-almamater.jpg" alt="">
           <div class="info">
-            <h1>CLARA GUEDES</h1>
-            <h2>Diretora da ONG</h2>
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Nec, odio faucibus in gravida. Purus nisl,
-              pellentesque pretium et pretium etiam enin”
+            <h1>TELMA</h1>
+            <h2>Alma Mater</h2>
+            <p>“Atendemos mensalmente cerca de 40 crianças e adolescentes em duas unidades, 
+              oferecendo moradia, vestuário, educação, alimentação e etc. 
+              Além disso realizamos todo atendimento e encaminhamentos necessários as famílias, 
+              com o objetivo de superar as fragilidades que levaram ao acolhimento.”
             </p>
           </div>
         </div>
       </div>
       <div class="item">
         <div class="card">
-          <img src="../img/foto-depoimento2.jpg" alt="">
+          <img src="../img/depoimentos/danilo-ica.png" alt="">
           <div class="info">
-            <h1>REBECA ALVES</h1>
-            <h2>Diretora da ONG</h2>
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Nec, odio faucibus in gravida. Purus nisl,
-              pellentesque pretium et pretium etiam enin”
+            <h1>DANILO SILVA ALBERTI</h1>
+            <h2>Projeto Ica</h2>
+            <p>“Buscamos fazer com que a criança, o adolescente e o jovem sejam 
+              protagonistas de mudanças sociais em suas comunidades, empoderados por 
+              virtudes universais.”
             </p>
           </div>
         </div>
       </div>
       <div class="item">
         <div class="card">
-          <img src="../img/foto-depoimento3.jpg" alt="">
+          <img src="../img/depoimentos/fabiana-equipotencia.jpg" alt="">
           <div class="info">
-            <h1>MARCOS GUERRA</h1>
-            <h2>Diretor da ONG</h2>
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Nec, odio faucibus in gravida. Purus nisl,
-              pellentesque pretium et pretium etiam enin”
+            <h1>FABIANA</h1>
+            <h2>Equipotência</h2>
+            <p>“Hoje atendemos crianças conveniadas com a prefeitura e com a 
+              assistência social, então nós atendemos duas frentes, atendemos 
+              crianças do ensino fundamental do primeiro ao quinto ano e, da área social, 
+              que são as crianças que vem do CRAS, que nós atendemos as de 6 a 15 anos.”
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="../img/depoimentos/nathalia-laraninha.jpg" alt="">
+          <div class="info">
+            <h1>NATHALIA L. P. DA SILVA</h1>
+            <h2>Lar Aninha</h2>
+            <p>“O Lar Aninha é uma creche que atende as necessidades da primeira infância, 
+              crianças de 4 meses à 5 anos e 11 meses na cidade de Mogi Mirim.”
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="../img/depoimentos/eloane-maguila.jpg" alt="">
+          <div class="info">
+            <h1>ELOANE FELIPE</h1>
+            <h2>Maguila</h2>
+            <p>“O Projeto Maguila tem por finalidade promover atividades de 
+              relevância pública e social, direcionadas a crianças e adolescentes 
+              de preferência as que se encontram em situação de vulnerabilidade e 
+              risco pessoal e/ou social.”
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="item">
+        <div class="card">
+          <img src="../img/depoimentos/cintia-coroneljoao.png" alt="">
+          <div class="info">
+            <h1>CINTIA C. O. REZENDE</h1>
+            <h2>Coronel João Leite</h2>
+            <p>“Atendemos idosos carentes do Município e oferecemos atendimento integral,
+              afim de assegurar a garantia de direitos.”
+            </p>
+          </div>
+        </div>
+      </div> -->
+      <div class="item">
+        <div class="card">
+          <img src="../img/depoimentos/daiane-educandario.jpg" alt="">
+          <div class="info">
+            <h1>DAIANE GOMES</h1>
+            <h2>Educandário</h2>
+            <p>“Tem por missão a promoção de atividades de fins de relevância pública e social.
+            Proporcionando condições para seu desenvolvimento físico, psicológico, intelectual,
+            social e cultural em complementação a ação da família.”
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="../img/depoimentos/everaldo-laremanuel.jpg" alt="">
+          <div class="info">
+            <h1>EVERALDO</h1>
+            <h2>Lar Emanuel</h2>
+            <p>“Oferecemos serviços de proteção especial de alta complexidade a através de 
+              acolhimento institucional com características domiciliar a pessoas idosas de 
+              ambos os sexos , com diversas necessidades clínicas.”
             </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- <div class="footer"></div> -->
+  <div class="footer">
+    <div class="footer-section">
+    <div class="footer-logo">
+      <img src="../img/beeongs/sub logo.svg" alt="">
+    </div>
+    <div class="footer-links">
+      <h1>BEEONGS</h1>
+      <a href="#">Início</a>
+      <a href="forum-index.php">Fórum</a>
+      <a href="ongs-page.php">Ongs</a>
+    </div>
+    <div class="footer-contact">
+      <h1>CONTATO</h1>
+      <a><i class="fa-brands fa-square-instagram"></i> @beeongs</a>
+      <a><i class="fa-solid fa-square-envelope"></i> projetobeeongs@gmail.com</a>
+      <a><i class="fa-solid fa-square-phone"></i> +55 19 36839-5830</a>
+    </div>
+    </div>
+    <div class="footer-copyright">
+      <p>© 2022 BeeONGS</p>
+    </div>
+  </div>
   <script src="../js/index.js" defer></script>
   <script>
     document.body.className += ' js-enabled';
@@ -154,5 +242,4 @@ require("../controllers/header.php");
     <a href="https://www.enable-javascript.com/pt/#chrome" target="_blank">Ajuda</a>
   </div>
 </body>
-
 </html>

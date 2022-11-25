@@ -10,11 +10,12 @@ $stmt -> execute();
 $usuario = $stmt -> rowCount();
 
     if($usuario > 0) {
+        $_SESSION["error"] = null;
         $_SESSION["email"] = $email;
         header("Location:../views/index.php");
         exit();
     }   else {
-        $_SESSION["error"] = true;
+        $_SESSION["error"] = "E-mail e/ou senha inválidos!";
         header("Location: ../views/login-page.php");
         exit();
     }

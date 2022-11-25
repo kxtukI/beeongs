@@ -14,9 +14,11 @@ if(isset($_POST["inputText"])){
         while($row = $result = $stmt -> fetch(PDO::FETCH_ASSOC)){
             $nome = $row['nome'];
             $categoria = $row['categoria'];
+            $redirect = $row['redirect'];
+            $imgRef = $row['img-ref'];
         ?>
-        <div class="items" onclick="window.location='ongs/<?php echo $nome;?>'">
-            <img src="../img/ongs/projeto-ica.png" alt="">
+        <div class="items" onclick="window.location='ongs/<?php echo $redirect;?>.php'">
+            <img src="../img/ongs/<?php echo $imgRef;?>" alt="">
             <div class="info">
                 <h1><?php echo $nome;?></h1>
                 <p><?php echo $categoria;?></p>

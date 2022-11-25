@@ -19,7 +19,16 @@ font-family: 'Roboto', sans-serif; */
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background:rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -204,7 +213,7 @@ body {
   }
 
 .info-ongs h1 {
-    margin-left: 15px;
+    margin: 30px 15px 0 15px;
     color: #1F1300;
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
@@ -228,8 +237,14 @@ body {
     font-size: 24px;
 }
 
+.info-ongs a{
+  text-decoration: none;
+  color: #1F130075;
+}
+
 .img-ong {
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #FFFFFF;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
     position: relative;

@@ -6,25 +6,21 @@ $nome = ($_POST["nome"]);
 $email = ($_POST["email"]);
 $senha = $_POST["senha"];
 $cpf = ($_POST["cpf"]);
+$path = "../img/user/user-default.png";
 
-// $usuario = $stmt -> rowCount();
+$stmt = $bd -> prepare("SELECT * FROM usuarios where email = '$email' AND cpf = '$cpf' OR email = '$email' OR cpf = '$cpf'");
+$stmt -> execute();
+$usuario = $stmt -> rowCount();
 
-$stmtemail = $bd -> prepare("SELECT email FROM usuarios WHERE email = '$email'");
-$stmtemail -> execute();
-$usuarioemail = $stmtemail -> rowCount();
-
-$stmtcpf = $bd -> prepare("SELECT cpf FROM usuarios WHERE cpf = '$cpf'");
-$stmtcpf -> execute();
-$usuariocpf = $stmtcpf -> rowCount();
-
-    if($usuarioemail > 0) {
-        $_SESSION["error_email"] == true;
+        if ($usuario > 0) {
+        $_SESSION["user"] = "Email e/ou CPF já cadastrados!";
         header("Location:../views/register-page.php");
-    } elseif ($usuariocpf > 0) {
-        $_SESSION["error_cpf"] = ".";
-        header("Location:../views/register-page.php");
+        exit();
     } else {
-        $stmt = $bd -> prepare("INSERT INTO usuarios (nome, email, cpf, senha, dataCadastro) VALUES ('$nome', '$email', '$cpf', '$senha', NOW())");
+        $stmt = $bd -> prepare("INSERT INTO usuarios (nome, email, cpf, senha, imgUser, dataCadastro) VALUES ('$nome', '$email', '$cpf', '$senha', '$path', NOW())");
         $stmt->execute();
-        header("Location:../views/login-page.php");
+        $_SESSION["user"] = null;
+        $_SESSION["email"] = $email;
+        header("Location:../views/index.php");
+        exit();
     }

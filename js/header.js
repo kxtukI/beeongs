@@ -12,7 +12,7 @@ var dropdown = document.getElementById("dropdown-section");
 
   if(dropdown.style.display == 'block')
       dropdown.style.display = 'none';
-       else
+      else
       dropdown.style.display = 'block';
       
 window.onclick = function(t) {

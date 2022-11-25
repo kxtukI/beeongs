@@ -25,7 +25,6 @@ function scrollLoop() {
   } else {
     requestAnimationFrame(scrollLoop);
   }
-
 }
 
 const navbar = document.querySelector("nav");
@@ -97,3 +96,11 @@ function toggleD(){
       dropdown.style.display = "none";
     }
   }}
+
+  function scrollToTop (){
+    window.scrollTo(0,0);
+  }
+
+	$(document).on('click','#saiba-mais',function(e){
+    window.scrollTo(0,1000);
+  })
