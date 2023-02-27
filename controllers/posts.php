@@ -45,12 +45,15 @@ if(move_uploaded_file($tmp,$path))
       header("Location: ../views/forum-index.php");
       exit();
     }
+
+    $stmt = $bd -> prepare("SELECT * FROM ongs ORDER BY rand() LIMIT 5;");
+    $stmt -> execute();
+    $queryRandOngs = $stmt -> fetch(PDO::FETCH_ASSOC);
   
     $stmt = $bd -> prepare("SELECT nome, titulo, descricao, imgPost, imgUser, datapost FROM usuarios INNER JOIN posts ON posts.userid = usuarios.userid ORDER BY datapost DESC");
     $stmt -> execute();
-    $query = $stmt -> rowCount();
-    
-    if($query > 0){?>
+    $queryPosts = $stmt -> rowCount();
+    if($queryPosts > 0){?>
        <div class="main-section">
        <div class="post-area">
       <img src="<?php echo $imgUser;?>" alt="" class="user-icon">
