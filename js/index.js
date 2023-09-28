@@ -50,29 +50,22 @@ const navbar = document.querySelector("nav");
     }
   });
 
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    center:true,
-    loop:true,
-    autoplay: true,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true,
-    margin:350,
-    nav:true,
-    dots:false,
-    responsiveClass:true,
-    responsive:{
-      0:{
-        items: 1
-      },
-      480:{
-        items: 3
-      },
-      769:{
-        items: 6
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+      nav:false,
+      dots:true,
+      responsive:{
+        0:{
+          items: 1
+        },
+        480:{
+          items: 2
+        },
+        769:{
+          items: 3
+        }
       }
-    }
-});
+  });
 
 const btnMobile = document.getElementById("btn-mobile");
 

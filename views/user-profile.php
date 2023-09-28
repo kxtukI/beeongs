@@ -285,8 +285,8 @@ $(document).on('click','#delete',function(e){
   text: "Você realmente deseja DELETAR A SUA CONTA?",
   icon: 'warning',
   showCancelButton: true,
-  confirmButtonColor: '#d33',
-  cancelButtonColor: '#28a745',
+  confirmButtonColor: '#1f130075',
+  cancelButtonColor: '#d33',
   confirmButtonText: 'Deletar',
   cancelButtonText: 'Cancelar'
 }).then((result) => {

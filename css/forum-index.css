@@ -220,7 +220,7 @@ textarea::after .form-control-placeholder {
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  padding-top: 75px;
+  padding-top: 80px;
   width: 40%;
 }
 

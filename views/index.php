@@ -42,14 +42,14 @@ require("../controllers/header.php");
       </div>
         <img src="../img/foto-carousel1.png" class="carousel-img" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="5000">
+      <!-- <div class="carousel-item" data-bs-interval="5000">
         <div class="info-section">
           <h1>Apoio</h1>
           <img src="../img/beecloud-logo.svg" class="beecloud-logo" alt="">
           <a href="https://www.beecloud.com.br" target="_blank" >Saiba mais</a>
       </div>
         <img src="../img/foto-carousel2.jpg" class="carousel-img" alt="...">
-      </div>
+      </div> -->
       <div class="carousel-item" data-bs-interval="5000">
       <div class="info-section">
           <h1>Vai ter que pagar imposto?</h1>
@@ -229,9 +229,8 @@ Porém, para que o dinheiro chegue ao destino final, é necessário que você in
     </div>
     </div>
     <div class="footer-copyright">
-      <p>© 2022 BeeONGS</p>
+      <p>© 2023 BeeONGS</p>
     </div>
-  </div>
   <script src="../js/index.js" defer></script>
   <script>
     document.body.className += ' js-enabled';

@@ -41,15 +41,14 @@ CREATE TABLE `ongs` (
 
 INSERT INTO `ongs` (`ongsid`, `nome`, `categoria`, `redirect`, `img-ref`) VALUES
 (1, 'Projeto Ica', 'Crianças e Adolescentes', 'projeto-ica', 'projeto-ica.png'),
-(2, 'Alma Mater', 'Crianças e Adolescentes', 'alma-mater', 'alma-mater.jpg'),
-(3, 'Casa de Repouso Emanuel', 'Idosos', 'casa-emanuel', 'casa-emanuel.jpg'),
-(4, 'Lar Aninha', 'Crianças', 'lar-aninha', 'lar-aninha.png'),
-(5, 'Assoc. Esp. Jesus e Caridade', 'Deficientes', 'espirita-jesus', 'assoc-jesus-caridade.png'),
-(6, 'Equipotência', 'Crianças e Adolescentes', 'equipotencia', 'equipotencia.svg'),
-(7, 'Educ. N. Sra. do Carmo', 'Crianças', 'edu-nossa-sra-carmo', 'edu-nsra-carmo.svg'),
-(8, 'Inst. Coronel João Leite', 'Idosos', 'inst-coronel-leite', 'inst-coronel-leite.png'),
-(9, 'Maguila', 'Crianças e Adolescentes', 'maguila', 'maguila.jpg'),
-(10, 'Apdmm', 'Deficientes', 'apdmm', 'apdmm.svg');
+(2, 'Casa de Repouso Emanuel', 'Idosos', 'casa-emanuel', 'casa-emanuel.jpg'),
+(3, 'Lar Aninha', 'Crianças', 'lar-aninha', 'lar-aninha.png'),
+(4, 'Assoc. Esp. Jesus e Caridade', 'Deficientes', 'espirita-jesus', 'assoc-jesus-caridade.png'),
+(5, 'Equipotência', 'Crianças e Adolescentes', 'equipotencia', 'equipotencia.svg'),
+(6, 'Educ. N. Sra. do Carmo', 'Crianças', 'edu-nossa-sra-carmo', 'edu-nsra-carmo.svg'),
+(7, 'Inst. Coronel João Leite', 'Idosos', 'inst-coronel-leite', 'inst-coronel-leite.png'),
+(8, 'Maguila', 'Crianças e Adolescentes', 'maguila', 'maguila.jpg'),
+(9, 'Apdmm', 'Deficientes', 'apdmm', 'apdmm.svg');
 
 -- --------------------------------------------------------
 
