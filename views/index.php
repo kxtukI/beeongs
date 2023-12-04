@@ -39,9 +39,13 @@ include("../controllers/header.php");
         <main>
             <div class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="5000"></div>
-                    <div class="carousel-item" data-bs-interval="5000"><p>a</p></div>
-                    <div class="carousel-item" data-bs-interval="5000"><p>a</p></div>
+
+                   <div class="carousel-item active" data-bs-interval="5000">              
+
+                    <img src="../img/img carousel.svg" alt="" class="carousel-img" style="width: 100%">
+
+                    </div>
+
                 </div>
             </div>
         </main>
