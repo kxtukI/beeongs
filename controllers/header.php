@@ -7,7 +7,7 @@ if(isset($_SESSION["email"]) == false) {
       <a class="underline" href="index.php">INÍCIO</a>
       <a class="underline" href="forum-index.php">FÓRUM</a>
       <a class="underline" href="ongs-page.php">ONGS</a>
-      <a href="login-page.php" class="btn-login" href="login-page.php">
+      <a id="btn-login" >
       <i class="fa-solid fa-lock"></i>
         LOGIN
       </a>
